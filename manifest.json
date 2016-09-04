@@ -1,7 +1,20 @@
-{"name": "Download Filename Controller",
- "description": "Download Filename Controller",
- "version": "0.1",
- "background": {"scripts": ["bg.js"], "persistent": false},
- "permissions": ["downloads"],
- "content_security_policy": "script-src 'self' chrome-extension-resource: 'unsafe-eval'; default-src 'self'",
- "manifest_version": 2}
+{
+	"name": "Download Filename Controller",
+	"description": "Download Filename Controller",
+	"version": "0.1",
+	"background": {"scripts": 
+			["jquery-3.1.0.min.js", 
+			 "jquery-ui.min.js",
+			 "bg.js"
+			], "persistent": false},
+	"permissions": ["downloads", "storage", "tabs", "activeTab", "http://*/*", "https://*/*", "file://*/*"],
+	"content_security_policy": "script-src 'self' chrome-extension-resource: 'unsafe-eval'; default-src 'self'",
+	"manifest_version" : 2,
+	"content_scripts": [
+     {
+       "matches": ["http://*/", "https://*/"],
+       "css": ["jquery-ui.min.css", "bg.css"],
+       "js" : ["jquery-3.1.0.min.js", "jquery-ui.min.js", "rules.json"]
+     }
+    ]
+}

@@ -1,0 +1,34 @@
+.dlg-no-close .ui-dialog-titlebar-close {
+      display: none;
+ }
+ .dlg-no-title .ui-dialog-titlebar {
+      display: none;
+ }
+ .flex-container {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   
+   -webkit-flex-flow: row wrap;
+   justify-content: space-around;
+ }
+ 
+ .flex-item {
+   background: tomato;
+   padding: 5px;
+   width: 50px;
+   height: 45px;
+   margin-top: 10px;
+   
+   line-height: 50px;
+   color: white;
+   font-weight: bold;
+   font-size: 1em;
+   text-align: center;
+ }
