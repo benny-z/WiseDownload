@@ -3,13 +3,13 @@ dialogId = "dialog"; // + Math.random();
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
   if(changeInfo && changeInfo.status == "complete"){
       chrome.tabs.executeScript(tabId, {file: "jquery-3.1.0.min.js"}, function(){
-          chrome.tabs.executeScript(tabId, {file: "jquery-ui.min.js"}, function() {
-            chrome.tabs.insertCSS(tabId, {file: "jquery-ui.min.css"}, function () {
+        chrome.tabs.executeScript(tabId, {file: "bootstrap.min.js"}, function() {
+            chrome.tabs.insertCSS(tabId, {file: "bootstrap.css"}, function () {
               chrome.tabs.executeScript(tabId, {file: "helper.js"}, function() {
                 chrome.tabs.insertCSS(tabId, {file: "bg.css"}, function () {});
               });
             });
-          });
+        });
       });
   }}
 );
@@ -41,12 +41,11 @@ function checkValidity(selectedLst, curFileExt) {
       filename : curDownloadItem.filename,
       saveAs : true });
     trigger_dld_hook = true;
+    injectCode('closeDialog("' + dialogId + '")');
   } else { 
-    alert
-    alert("Download aborted");
+    injectCode('showDldAbortedMsg("' + dialogId + '")');
     trigger_dld_hook = false;
   }
-  injectCode('closeDialog("' + dialogId + '")');
   curDownloadItem = null;
 }
 
@@ -77,14 +76,7 @@ function foo(downloadItem, suggest) {
     trigger_dld_hook = false;
   } else {
     chrome.downloads.cancel(downloadItem.id);
-
-    if (div_initialized) {
-      injectCode('openDialog("' + dialogId + '")');
-    } else {
-      injectCode('createDiv("' + dialogId + '")');
-      injectCode('customizeDialog("' + dialogId + '")');
-      div_initialized = true;
-    }
+    injectCode('openDialog("' + dialogId + '")');
     curDownloadItem = downloadItem;
   }
 }
@@ -95,12 +87,11 @@ window.onload = function() {
     alert('An error occurred: failed to inject jQuery');
     return;
   }
-  
+
   initRules();
 
   // init. globals
   trigger_dld_hook = false;
-  div_initialized = false;
 
   // setting listeners
   chrome.downloads.onDeterminingFilename.addListener(foo);
