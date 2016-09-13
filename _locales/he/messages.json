@@ -1,0 +1,53 @@
+{
+  "application_title": {
+    "message": "Safe Download"
+  },
+  "application_description": {
+    "message": "Download files safely"
+  },
+  "headerTitle" : {
+  	"message" : "?מה את/ה מוריד/ה"
+  },
+  "downloadAbortedTitle" : {
+    "message" : "ההורדה בוטלה"
+  },
+  "downloadAbortedMessage" : {
+    "message" : "עושה רושם שאת/ה מוריד/ה לא מה שאת/ה חושב/ת שאת/ה מוריד/ה"
+  },
+  "document" : {
+    "message" : "מסמך"
+  },
+  "software" : {
+    "message" : "תוכנה"
+  },
+  "image" : {
+    "message" : "תמונה"
+  },
+  "music" : {
+    "message" : "מוסיקה"
+  },
+  "video" : {
+    "message" : "ווידאו"
+  },
+  "book" : {
+    "message" : "ספר"
+  },
+  "compressed" : {
+    "message" : "ארכיון"
+  },
+  "advanced" : {
+    "message" : "מתקדם"
+  },
+  "manualExtSpec" : {
+    "message" : "הכנס/י סיומת של הקובץ אותו את/ה מוריד/ה"
+  },
+  "ok" : {
+    "message" : "יאללה"
+  },
+    "iconCourtesy" : {
+    "message" : "כל הזכויות על האייקונים שמורות ל-"
+  },
+  "close" : {
+    "message" : "סגור"
+  }
+}

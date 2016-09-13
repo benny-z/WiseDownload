@@ -1,20 +1,23 @@
 {
-	"name": "Download Filename Controller",
-	"description": "Download Filename Controller",
-	"version": "0.1",
-	"background": {"scripts": 
-			["jquery-3.1.0.min.js", 
-			 "jquery.modal.min.js",
-			 "bg.js"
-			], "persistent": false},
-	"permissions": ["downloads", "storage", "tabs", "activeTab", "http://*/*", "https://*/*", "file://*/*"],
-	"content_security_policy": "script-src 'self' chrome-extension-resource: 'unsafe-eval'; default-src 'self'",
-	"manifest_version" : 2,
-	"content_scripts": [
-     {
-       "matches": ["http://*/", "https://*/"],
-       "css": ["jquery.modal.min.css", "bg.css"],
-       "js" : ["jquery-3.1.0.min.js", "jquery.modal.min.js"]
-     }
+    "name": "__MSG_application_title__",
+    "description": "__MSG_application_description__",
+    "default_locale": "en",
+    "version": "0.1",
+    "icons": {
+        "128": "icon100.png"
+    },
+    // we need the jquery here as it should be loaded before the background script
+    "background": { "scripts": ["jquery-3.1.0.min.js", "bg.js"], "persistent": false },
+    "permissions": ["downloads", "storage", "activeTab", "http://*/*", "https://*/*", "file://*/*"],
+    "content_security_policy": "script-src 'self' chrome-extension-resource: 'unsafe-eval'; default-src 'self'",
+    "manifest_version": 2,
+    "web_accessible_resources": [
+        "document.png",
+        "software.png",
+        "image.png",
+        "music.png",
+        "video.png",
+        "book.png",
+        "compressed.png"
     ]
 }

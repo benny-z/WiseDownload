@@ -1,0 +1,71 @@
+.enable-bootstrap .modal-header {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.enable-bootstrap .modal-header .close {
+  color:white !important;
+}
+
+.enable-bootstrap .modal-footer {
+    background-color: #f9f9f9;
+}
+
+.enable-bootstrap .flex-container {
+  padding: 7px;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+ 
+.enable-bootstrap .flex-item {
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+.enable-bootstrap figure figcaption {
+    text-align: center;
+    font-variant: small-caps;
+
+    font-family: Arial;
+    font-weight: bold;
+    color: #bb3333;
+}
+
+.enable-bootstrap img:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.enable-bootstrap img {
+    vertical-align: top;
+    transition: transform 0.2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+}

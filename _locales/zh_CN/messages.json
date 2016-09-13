@@ -1,0 +1,53 @@
+{
+  "application_title": {
+    "message": "Safe Download"
+  },
+  "application_description": {
+    "message": "Download files safely"
+  },
+  "headerTitle" : {
+  	"message" : "您要下载的是哪种文件？"
+  },
+  "downloadAbortedTitle" : {
+    "message" : "下载停止"
+  },
+  "downloadAbortedMessage" : {
+    "message" : "这个文件好像不是你要下载的!"
+  },
+  "document" : {
+    "message" : "文件"
+  },
+  "software" : {
+    "message" : "软件"
+  },
+  "image" : {
+    "message" : "图片"
+  },
+  "music" : {
+    "message" : "音乐"
+  },
+  "video" : {
+    "message" : "视频"
+  },
+  "book" : {
+    "message" : "书"
+  },
+  "compressed" : {
+    "message" : "档案"
+  },
+  "advanced" : {
+    "message" : "高级"
+  },
+  "manualExtSpec" : {
+    "message" : "手动指定扩展..."
+  },
+  "ok" : {
+    "message" : "好"
+  },
+  "iconCourtesy" : {
+    "message" : "图标属于"
+  },
+  "close" : {
+    "message" : "关"
+  }
+}

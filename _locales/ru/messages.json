@@ -1,0 +1,53 @@
+{
+  "application_title": {
+    "message": "Safe Download"
+  },
+  "application_description": {
+    "message": "Download files safely"
+  },
+  "headerTitle" : {
+  	"message" : "что вы скачиваете?"
+  },
+  "downloadAbortedTitle" : {
+    "message" : "Загрузка прервана"
+  },
+  "downloadAbortedMessage" : {
+    "message" : "Вы, вероятно, не скачиваете то, что намеревались"
+  },
+  "document" : {
+    "message" : "документ"
+  },
+  "software" : {
+    "message" : "программа"
+  },
+  "image" : {
+    "message" : "изображение"
+  },
+  "music" : {
+    "message" : "музыка"
+  },
+  "video" : {
+    "message" : "видео"
+  },
+  "book" : {
+    "message" : "книга"
+  },
+  "compressed" : {
+    "message" : "архив"
+  },
+  "advanced" : {
+    "message" : "дополнительное"
+  },
+  "manualExtSpec" : {
+    "message" : "Укажите расширение"
+  },
+  "ok" : {
+    "message" : "ОК"
+  },
+    "iconCourtesy" : {
+    "message" : "Все иконки скачаны с-"
+  },
+  "close" : {
+    "message" : "Закрыть"
+  }
+}

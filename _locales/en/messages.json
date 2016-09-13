@@ -1,0 +1,53 @@
+{
+  "application_title": {
+    "message": "Safe Download"
+  },
+  "application_description": {
+    "message": "Download files safely"
+  },
+  "headerTitle" : {
+  	"message" : "What are you trying to download?"
+  },
+  "downloadAbortedTitle" : {
+    "message" : "Download aborted"
+  },
+  "downloadAbortedMessage" : {
+    "message" : "You are probably downloading not what you think you do"
+  },
+  "document" : {
+    "message" : "document"
+  },
+  "software" : {
+    "message" : "software"
+  },
+  "image" : {
+    "message" : "image"
+  },
+  "music" : {
+    "message" : "music"
+  },
+  "video" : {
+    "message" : "video"
+  },
+  "book" : {
+    "message" : "book"
+  },
+  "compressed" : {
+    "message" : "archive"
+  },
+  "advanced" : {
+    "message" : "Advanced"
+  },
+  "manualExtSpec" : {
+    "message" : "Specify extension manually..."
+  },
+  "ok" : {
+    "message" : "Ok"
+  },
+  "iconCourtesy" : {
+    "message" : "All icons are courtesy of"
+  },
+  "close" : {
+    "message" : "Close"
+  }
+}
