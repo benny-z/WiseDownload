@@ -1,9 +1,9 @@
 {
   "application_title": {
-    "message": "Safe Download"
+    "message": "WiseDownload"
   },
   "application_description": {
-    "message": "Download files safely"
+    "message": "Download only the files you wish to"
   },
   "headerTitle" : {
   	"message" : "您要下载的是哪种文件？"
