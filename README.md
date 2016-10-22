@@ -1,17 +1,17 @@
 # WiseDownload
 
 ## Executive summary
-WiseDownload is a Chrome extension that prevents users from downloading unwanted files. WiseDownload queries the user for the type of the file they are downloading and comparing it to the file's extension.
+WiseDownload is a Chrome extension that prevents users from downloading unwished files. In order to achieve this goal, WiseDownload queries the user for the type of the file they are downloading, and compares it to the subjected file's extension.
 
 ## Technical details
-### Rules
-In the code, the so-called *rules* are mappings between a file type, e.g., an image, a document, etc., and their extensions. The mappings are according to Wikipedia. When the extension starts, the *rules* dictionary is initialized and used throughout the whole code. Whenever a user selects the type of the file he/she is downloading, the extensions corresponding to the selected type are compared to the file's extension, and in the case of a match, the file downloads safely, or otherwise. its download is aborted.
+In the code, the *rules* are mappings between a file type, e.g., an image, a document, etc., and their extensions. The mappings are according to Wikipedia. When the extension starts, the *rules* dictionary is initialized and used throughout the whole code.
+When a user selects the type of the file he/she is downloading, its extension is compared to the extensions corresponding to the selected type. The file is downloaded safely only if there is match.
 
 ### Used frameworks
  * [jQuery](https://jquery.com/)
  * [bootstrap](http://getbootstrap.com/)
 
-**note** The bootstrap CSS file was modified such that *enable-bootstrap* would be the parent selector of all. This was done so that the extension's popup would not interfere with any website's design.
+**note** The bootstrap CSS file was modified such that *enable-bootstrap* would be the parent selector of all the others. This was done so that the extension's popup would not interfere with any website's design.
 
 ## Files
  * bg.js - the background script that is loaded into each tab. It loads all the other scripts and style file, initializes the rules, creates and handles listeners, and calls the relevant function when a listener is triggered.
