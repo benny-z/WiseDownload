@@ -11,8 +11,6 @@ When a user selects the type of the file they are downloading, its extension is 
  * [jQuery](https://jquery.com/)
  * [bootstrap](http://getbootstrap.com/)
 
-**note** The bootstrap CSS file was modified such that *enable-bootstrap* would be the parent selector of all the others. This was done so that the extension's popup would not interfere with any website's design.
-
 ## Files
  * bg.js - the background script that is loaded into each tab. It loads all the other scripts and style file, initializes the rules, creates and handles listeners, and calls the relevant function when a listener is triggered.
  * popup_ui.js - responsible for generating the "popup" (see the figure below) that a user sees when a download is initiated. Please note that this file is not responsible for any BL, as it all happens in bg.js. 
