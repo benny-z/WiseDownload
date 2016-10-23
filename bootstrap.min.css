@@ -1,3 +1,6 @@
+/* This bootstrap CSS file was modified such that *enable-bootstrap* would be the parent selector of all the others. 
+This was done so that the extension's popup would not interfere with the style of the website this code is injected to. */
+
 .enable-bootstrap {
   /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 }
