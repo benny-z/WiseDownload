@@ -1,7 +1,7 @@
 # WiseDownload
 
 ## Executive summary
-WiseDownload is a Chrome extension that prevents users from downloading unwished files. In order to achieve this goal, WiseDownload queries the user for the type of the file they are downloading, and compares it to the subjected file's extension.
+WiseDownload is a Chrome extension that prevents users from downloading undesired files. In order to achieve this goal, WiseDownload asks the user for the type of the file they wish to download, and compares it to the subjected file extension.
 
 ## Technical details
 In the code, the *rules* are mappings between a file type, e.g., an image, a document, etc., and their extensions. The mappings are according to Wikipedia. When the extension starts, the *rules* dictionary is initialized and used throughout the whole code.
